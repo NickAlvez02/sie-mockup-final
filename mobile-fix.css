@@ -1,0 +1,187 @@
+/* ============================================================
+   Ajuste responsive del ecosistema de servicios
+   Mantiene el diseño orbital en escritorio y lo convierte en una
+   composición ordenada en móviles para evitar solapamientos.
+============================================================ */
+
+@media (max-width: 700px){
+  .ecosistema-fluid{
+    width:100% !important;
+    min-height:0 !important;
+    display:block !important;
+    padding:0 !important;
+  }
+
+  .ecosistema-orbita--ux,
+  .ecosistema-orbita--fluida{
+    position:relative !important;
+    width:100% !important;
+    max-width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    display:grid !important;
+    grid-template-columns:repeat(2,minmax(0,1fr)) !important;
+    gap:12px !important;
+    align-items:stretch !important;
+    padding:0 !important;
+    margin:0 auto !important;
+  }
+
+  /* En móvil quitamos las órbitas decorativas: el contenido conserva
+     la identidad del ecosistema, pero se vuelve legible y táctil. */
+  .ecosistema-orbita--ux::before,
+  .ecosistema-orbita--ux::after,
+  .ecosistema-orbita__glow,
+  .ecosistema-orbita__aro,
+  .ecosistema-satelite{
+    display:none !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-orbita__centro{
+    position:relative !important;
+    inset:auto !important;
+    transform:none !important;
+    grid-column:1 / -1 !important;
+    width:100% !important;
+    height:auto !important;
+    min-height:126px !important;
+    margin:0 0 4px !important;
+    padding:16px 18px !important;
+    border-radius:24px !important;
+    display:grid !important;
+    grid-template-columns:84px minmax(0,1fr) !important;
+    grid-template-rows:auto auto auto !important;
+    column-gap:15px !important;
+    align-items:center !important;
+    text-align:left !important;
+    background:linear-gradient(145deg,#ffffff 0%,#eef9fd 100%) !important;
+    border:1px solid rgba(68,178,223,.22) !important;
+    box-shadow:0 14px 30px rgba(49,112,144,.09) !important;
+  }
+
+  .ecosistema-orbita__centro-logo{
+    grid-column:1 !important;
+    grid-row:1 / 4 !important;
+    width:78px !important;
+    height:78px !important;
+    min-height:78px !important;
+    margin:0 !important;
+    align-self:center !important;
+  }
+
+  .ecosistema-orbita__centro-logo img{
+    width:78px !important;
+    height:78px !important;
+  }
+
+  .ecosistema-orbita__centro-kicker{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    align-self:end !important;
+    font-size:10px !important;
+    line-height:1.2 !important;
+    letter-spacing:.04em !important;
+    color:#199bd4 !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-orbita__centro strong{
+    grid-column:2 !important;
+    grid-row:2 !important;
+    max-width:none !important;
+    font-size:17px !important;
+    line-height:1.15 !important;
+    color:#0b4568 !important;
+    text-align:left !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-orbita__centro small,
+  .ecosistema-orbita__centro small{
+    grid-column:2 !important;
+    grid-row:3 !important;
+    max-width:none !important;
+    margin:2px 0 0 !important;
+    font-size:11px !important;
+    line-height:1.35 !important;
+    font-weight:600 !important;
+    color:#728995 !important;
+    text-align:left !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-item,
+  .ecosistema-orbita--ux .ecosistema-item--contable,
+  .ecosistema-orbita--ux .ecosistema-item--soporte,
+  .ecosistema-orbita--ux .ecosistema-item--capacitacion,
+  .ecosistema-orbita--ux .ecosistema-item--medida,
+  .ecosistema-orbita--ux .ecosistema-item--marketing,
+  .ecosistema-orbita--ux .ecosistema-item--talleres{
+    position:relative !important;
+    inset:auto !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    bottom:auto !important;
+    transform:none !important;
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    min-height:76px !important;
+    margin:0 !important;
+    padding:11px 34px 11px 11px !important;
+    border-radius:18px !important;
+    display:flex !important;
+    align-items:center !important;
+    gap:10px !important;
+    overflow:hidden !important;
+    box-sizing:border-box !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-item__icono{
+    position:relative !important;
+    inset:auto !important;
+    left:auto !important;
+    top:auto !important;
+    transform:none !important;
+    flex:0 0 40px !important;
+    width:40px !important;
+    height:40px !important;
+    border-radius:13px !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-item b,
+  .ecosistema-orbita--ux .ecosistema-item--medida b,
+  .ecosistema-orbita--ux .ecosistema-item--marketing b{
+    margin:0 !important;
+    min-height:0 !important;
+    max-width:none !important;
+    font-size:12px !important;
+    line-height:1.2 !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+    color:#173950 !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-item::after{
+    right:11px !important;
+    top:50% !important;
+    transform:translateY(-50%) !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-item:hover,
+  .ecosistema-orbita--ux .ecosistema-item:focus-visible,
+  .ecosistema-orbita--ux .ecosistema-item.is-active,
+  .ecosistema-orbita--ux .ecosistema-item--contable:hover,
+  .ecosistema-orbita--ux .ecosistema-item--talleres:hover{
+    transform:translateY(-2px) !important;
+  }
+}
+
+@media (max-width: 360px){
+  .ecosistema-orbita--ux,
+  .ecosistema-orbita--fluida{
+    grid-template-columns:1fr !important;
+  }
+
+  .ecosistema-orbita--ux .ecosistema-orbita__centro{
+    grid-column:1 !important;
+  }
+}
