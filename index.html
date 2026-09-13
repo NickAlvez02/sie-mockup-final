@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Corporativo SIE</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<!-- ============================================================ NAVBAR -->
+<header class="navbar" id="navbar">
+<div class="navbar__inner">
+<a aria-label="Corporativo SIE - Inicio" class="navbar__logo" href="#inicio">
+<span class="navbar__logo-stack">
+<img alt="Corporativo SIE" class="navbar__logo-color" src="assets/logo.png"/>
+<img alt="" aria-hidden="true" class="navbar__logo-blanco" src="assets/logo.png"/>
+</span>
+</a>
+<nav aria-label="Navegación principal" class="navbar__links">
+<a href="#inicio">Inicio</a>
+<a href="#sistemas">Sistemas</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="#casos">Casos de éxito</a>
+<a href="#contacto">Contacto</a>
+</nav>
+<div class="navbar__acciones">
+<a class="navbar__ia" href="#sie-ia">
+<span class="destello">✦</span> SIE IA
+      </a>
+<a class="navbar__cta" href="#contacto" id="nav-asesor">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2 .7 3.9 1.9 5.5L2.5 22l5.5-1.4c1.3.6 2.7 1 4.2 1 5.5 0 10-4.1 10-9.4S17.5 2 12 2z"></path></svg>
+<span>Hablar con un asesor</span>
+</a>
+</div>
+<button aria-expanded="false" aria-label="Abrir menú" class="navbar__hamburguesa" id="btn-menu">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 24 24"><line x1="3" x2="21" y1="6" y2="6"></line><line x1="3" x2="21" y1="12" y2="12"></line><line x1="3" x2="21" y1="18" y2="18"></line></svg>
+</button>
+</div>
+<nav class="nav-movil" id="nav-movil">
+<a href="#inicio">Inicio</a>
+<a href="#sistemas">Sistemas</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="#casos">Casos de éxito</a>
+<a href="#contacto">Contacto</a>
+<a class="nav-movil__ia" href="#sie-ia">✦ Preguntar a SIE IA</a>
+<a class="nav-movil__cta" href="#contacto" id="movil-asesor">Hablar con un asesor</a>
+</nav>
+</header>
+<main id="inicio">
+<!-- ============================================================ EXPERIENCIA SUPERIOR: PROMOCIONES + SERVICIOS -->
+<section aria-label="Promociones y servicios de Corporativo SIE" class="experiencia-top experiencia-top--fluida" id="servicios">
+<div class="contenedor experiencia-top__grid experiencia-top__grid--fluido reveal">
+<div aria-label="Promociones vigentes" class="promos-fluidas">
+<div class="hero__carrusel hero__carrusel--top hero__carrusel--fluido" id="carrusel">
+<div class="hero__track" id="carrusel-track"></div>
+<button aria-label="Promoción anterior" class="hero__flecha hero__flecha--prev" id="btn-prev">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+</button>
+<button aria-label="Siguiente promoción" class="hero__flecha hero__flecha--next" id="btn-next">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.4" viewbox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+</button>
+<div class="hero__indicadores" id="carrusel-indicadores"></div>
+</div>
+</div>
+<div aria-label="Servicios de Corporativo SIE" class="ecosistema-fluid">
+<div aria-label="Accesos rápidos a servicios" class="ecosistema-orbita ecosistema-orbita--ux ecosistema-orbita--fluida">
+<div aria-hidden="true" class="ecosistema-orbita__glow"></div>
+<div aria-hidden="true" class="ecosistema-orbita__aro ecosistema-orbita__aro--1"></div>
+<div aria-hidden="true" class="ecosistema-orbita__aro ecosistema-orbita__aro--2"></div>
+<div aria-hidden="true" class="ecosistema-orbita__aro ecosistema-orbita__aro--3"></div>
+<span aria-hidden="true" class="ecosistema-satelite ecosistema-satelite--1"></span>
+<span aria-hidden="true" class="ecosistema-satelite ecosistema-satelite--2"></span>
+<span aria-hidden="true" class="ecosistema-satelite ecosistema-satelite--3"></span>
+<span aria-hidden="true" class="ecosistema-satelite ecosistema-satelite--4"></span>
+<div aria-live="polite" class="ecosistema-orbita__centro">
+<span aria-hidden="true" class="ecosistema-orbita__centro-logo"><img alt="" src="assets/logo-mark.png"/></span>
+<span class="ecosistema-orbita__centro-kicker">Corporativo SIE</span>
+<strong id="ecosistema-centro-titulo">Conoce nuestros servicios</strong>
+<small id="ecosistema-centro-descripcion">Selecciona una opción</small>
+<a aria-label="Abrir servicio seleccionado" class="ecosistema-orbita__centro-link" href="#contacto" id="ecosistema-centro-link">Ver detalle <b>→</b></a>
+</div>
+<a aria-label="Servicios contables" class="ecosistema-item ecosistema-item--contable" data-descripcion="Gestión financiera y fiscal para empresas." data-link="#contacto" data-servicio="contables" data-titulo="Contables" href="#contacto">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 19V9"></path><path d="M10 19V5"></path><path d="M16 19v-7"></path><path d="M22 19H2"></path></svg></span><b>Contables</b>
+</a>
+<a aria-label="Soporte técnico" class="ecosistema-item ecosistema-item--soporte" data-descripcion="Acompañamiento especializado." data-link="#contacto" data-servicio="soporte" data-titulo="Soporte Técnico" href="#contacto">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><path d="M4 13v4a2 2 0 0 0 2 2h1v-6H4zM20 13v4a2 2 0 0 1-2 2h-1v-6h3z"></path><path d="M17 19c0 1.1-2.2 2-5 2"></path></svg></span><b>Soporte Técnico</b>
+</a>
+<a aria-label="Programación" class="ecosistema-item ecosistema-item--medida" data-descripcion="Desarrollo de software a medida." data-link="#soluciones-medida" data-servicio="programacion" data-titulo="Programación" href="#soluciones-medida">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><polyline points="8 9 4 12 8 15"></polyline><polyline points="16 9 20 12 16 15"></polyline><line x1="14" x2="10" y1="5" y2="19"></line></svg></span><b>Programación</b>
+</a>
+<a aria-label="Diseño y marketing" class="ecosistema-item ecosistema-item--marketing" data-descripcion="Identidad visual y estrategias digitales." data-link="#contacto" data-servicio="marketing" data-titulo="Diseño y Marketing" href="#contacto">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 20h9"></path><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"></path></svg></span><b>Diseño y Marketing</b>
+</a>
+<a aria-label="Capacitación" class="ecosistema-item ecosistema-item--capacitacion" data-descripcion="Formación especializada para equipos." data-link="#contacto" data-servicio="capacitacion" data-titulo="Capacitación" href="#contacto">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="m22 10-10-5L2 10l10 5 10-5Z"></path><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"></path></svg></span><b>Capacitación</b>
+</a>
+<a aria-label="Talleres" class="ecosistema-item ecosistema-item--talleres" data-descripcion="Tecnología e innovación aplicada." data-link="#contacto" data-servicio="talleres" data-titulo="Talleres" href="#contacto">
+<span aria-hidden="true" class="ecosistema-item__icono"><svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewbox="0 0 24 24"><path d="M9 18h6"></path><path d="M10 22h4"></path><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5C14.7 15.2 14 16 14 17h-4c0-1-.7-1.8-1.5-2.5Z"></path></svg></span><b>Talleres</b>
+</a>
+</div>
+</div>
+</div>
+</section>
+<section aria-labelledby="soluciones-principales-titulo" class="soluciones-principales">
+<div class="contenedor reveal" id="sistemas">
+<div class="hero__sistemas-encabezado">
+<p class="hero__sistemas-titulo" id="soluciones-principales-titulo">Soluciones principales</p>
+<p class="hero__sistemas-subtitulo">Dos plataformas clave para administrar, facturar y organizar mejor tu empresa.</p>
+</div>
+<div class="hero__sistemas">
+<a aria-label="Conocer CONTPAQi" class="sistema-card sistema-card--contpaqi" href="contpaqi.html">
+<div class="sistema-card__top">
+<div class="sistema-card__brand sistema-card__brand--contpaqi">
+<span aria-hidden="true" class="contpaqi-mark">
+<i></i><i></i><i></i><i></i>
+</span>
+<span class="sistema-card__marca">CONTPAQi<span>®</span></span>
+</div>
+<span aria-hidden="true" class="sistema-card__arrow">↗</span>
+</div>
+<p class="sistema-card__descripcion">Contabilidad, nómina, facturación y gestión empresarial.</p>
+<div aria-label="Funciones principales de CONTPAQi" class="sistema-card__tags">
+<span>Contabilidad</span><span>Nómina</span><span>Facturación</span>
+</div>
+<span class="sistema-card__cta">Conocer solución <b>→</b></span>
+</a>
+<a aria-label="Conocer Siigo Aspel" class="sistema-card sistema-card--siigo" href="siigo-aspel.html">
+<div class="sistema-card__top">
+<div class="sistema-card__brand sistema-card__brand--siigo">
+<span class="siigo-lockup-wrap">
+<img alt="Siigo Aspel" class="sistema-card__logo-img" src="assets/siigo-aspel-lockup.png"/>
+</span>
+</div>
+<span aria-hidden="true" class="sistema-card__arrow">↗</span>
+</div>
+<p class="sistema-card__descripcion">Administración, facturación, inventarios y control del negocio.</p>
+<div aria-label="Funciones principales de Siigo Aspel" class="sistema-card__tags">
+<span>Administración</span><span>Inventarios</span><span>Facturación</span>
+</div>
+<span class="sistema-card__cta">Conocer solución <b>→</b></span>
+</a>
+</div>
+</div>
+<div aria-labelledby="soluciones-especializadas-titulo" class="contenedor soluciones-especializadas reveal" id="soluciones-medida">
+<div class="soluciones-especializadas__encabezado">
+<div>
+<span class="soluciones-especializadas__eyebrow">Soluciones a medida</span>
+<h2 id="soluciones-especializadas-titulo">Desarrollos pensados para procesos específicos de tu empresa</h2>
+</div>
+<div class="soluciones-especializadas__encabezado-derecha">
+<p>Explora cada solución y descubre cómo podemos impulsar la eficiencia de tus procesos con desarrollos a la medida.</p>
+<button aria-controls="soluciones-medida-extra" aria-expanded="false" class="soluciones-especializadas__toggle" id="toggle-soluciones-medida" type="button">
+<span>Ver más soluciones</span>
+<span aria-hidden="true" class="soluciones-especializadas__toggle-icon">⌄</span>
+</button>
+</div>
+</div>
+<div class="soluciones-especializadas__grid soluciones-especializadas__grid--destacadas">
+<button class="solucion-video-card solucion-video-card--horizontal" data-solucion="hospitalario" type="button">
+<span class="solucion-video-card__visual solucion-video-card__visual--hospital">
+<span aria-hidden="true" class="solucion-video-card__icono solucion-video-card__icono--svg">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 48 48">
+<rect fill="currentColor" height="29" opacity=".08" rx="6" width="26" x="11" y="10"></rect>
+<path d="M18 11V8.8C18 7.25 19.25 6 20.8 6h6.4C28.75 6 30 7.25 30 8.8V11"></path>
+<rect height="30" rx="6" width="28" x="10" y="10"></rect>
+<path d="M24 17v16M16 25h16"></path>
+</svg>
+</span>
+</span>
+<span class="solucion-video-card__contenido"><strong>CRM Hospitalario</strong><small>Áreas, pacientes, medicamentos y pagos.</small></span>
+<span aria-hidden="true" class="solucion-video-card__flecha">→</span>
+</button>
+<button class="solucion-video-card solucion-video-card--horizontal" data-solucion="contable" type="button">
+<span class="solucion-video-card__visual solucion-video-card__visual--contable">
+<span aria-hidden="true" class="solucion-video-card__icono solucion-video-card__icono--svg">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 48 48">
+<rect fill="currentColor" height="32" opacity=".07" rx="5" width="24" x="9" y="8"></rect>
+<rect height="33" rx="5" width="25" x="8" y="7"></rect>
+<path d="M14 14h13v6H14z"></path>
+<circle cx="15" cy="27" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="21" cy="27" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="27" cy="27" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="15" cy="33" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="21" cy="33" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="27" cy="33" fill="currentColor" r="1.6" stroke="none"></circle>
+<path d="M36 15h4M36 22h4M36 29h4"></path>
+</svg>
+</span>
+</span>
+<span class="solucion-video-card__contenido"><strong>CRM Contable</strong><small>Clientes, soporte, contabilidad y ventas.</small></span>
+<span aria-hidden="true" class="solucion-video-card__flecha">→</span>
+</button>
+<button class="solucion-video-card solucion-video-card--horizontal" data-solucion="proveedores" type="button">
+<span class="solucion-video-card__visual solucion-video-card__visual--proveedores">
+<span aria-hidden="true" class="solucion-video-card__icono solucion-video-card__icono--svg">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 48 48">
+<path d="M12 8h18l7 7v25H12z" fill="currentColor" opacity=".07"></path>
+<path d="M12 8h18l7 7v25H12z"></path>
+<path d="M30 8v8h7"></path>
+<path d="M18 20h11M18 26h8M18 32h6"></path>
+<circle cx="35" cy="32" fill="#fff" r="8"></circle>
+<circle cx="35" cy="32" r="8"></circle>
+<path d="M35 27.5v9M38 29.5c-.8-1-1.8-1.5-3-1.5-1.7 0-3 1-3 2.3 0 1.5 1.2 2.1 3.2 2.5 1.8.4 2.8 1 2.8 2.4 0 1.5-1.3 2.6-3.2 2.6-1.4 0-2.6-.5-3.6-1.5"></path>
+</svg>
+</span>
+</span>
+<span class="solucion-video-card__contenido"><strong>Pago a Proveedores</strong><small>Pagos, cuentas y proveedores en un solo lugar.</small></span>
+<span aria-hidden="true" class="solucion-video-card__flecha">→</span>
+</button>
+</div>
+<div aria-hidden="true" class="soluciones-especializadas__extra" id="soluciones-medida-extra">
+<div class="soluciones-especializadas__grid soluciones-especializadas__grid--extra">
+<button class="solucion-video-card solucion-video-card--horizontal" data-solucion="prestamos" type="button">
+<span class="solucion-video-card__visual solucion-video-card__visual--prestamos">
+<span aria-hidden="true" class="solucion-video-card__icono solucion-video-card__icono--svg">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 48 48">
+<path d="M11 8h19l7 7v25H11z" fill="currentColor" opacity=".07"></path>
+<path d="M11 8h19l7 7v25H11z"></path>
+<path d="M30 8v8h7"></path>
+<circle cx="20" cy="21" r="3.6"></circle>
+<circle cx="29" cy="31" r="3.6"></circle>
+<path d="M17 34l15-16"></path>
+</svg>
+</span>
+</span>
+<span class="solucion-video-card__contenido"><strong>CRM de Préstamos</strong><small>Préstamos, clientes, adeudos y seguimiento.</small></span>
+<span aria-hidden="true" class="solucion-video-card__flecha">→</span>
+</button>
+<button class="solucion-video-card solucion-video-card--horizontal" data-solucion="vehiculos" type="button">
+<span class="solucion-video-card__visual solucion-video-card__visual--vehiculos">
+<span aria-hidden="true" class="solucion-video-card__icono solucion-video-card__icono--svg">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 48 48">
+<path d="M8 30l3.4-10.2A5 5 0 0 1 16.1 16h15.8a5 5 0 0 1 4.7 3.8L40 30" fill="currentColor" opacity=".07"></path>
+<path d="M8 30l3.4-10.2A5 5 0 0 1 16.1 16h15.8a5 5 0 0 1 4.7 3.8L40 30"></path>
+<path d="M9 29h30a3 3 0 0 1 3 3v6H6v-6a3 3 0 0 1 3-3z"></path>
+<path d="M13 38v3M35 38v3"></path>
+<circle cx="13" cy="33.5" fill="currentColor" r="1.6" stroke="none"></circle>
+<circle cx="35" cy="33.5" fill="currentColor" r="1.6" stroke="none"></circle>
+<path d="M31 10a5 5 0 1 1 7.5 4.3L43 18.8M38.5 14.3l-3 3"></path>
+</svg>
+</span>
+</span>
+<span class="solucion-video-card__contenido"><strong>CRM Renta de Vehículos</strong><small>Control de unidades, clientes, rentas y disponibilidad.</small></span>
+<span aria-hidden="true" class="solucion-video-card__flecha">→</span>
+</button>
+</div>
+</div>
+</div>
+<div aria-hidden="true" class="solucion-modal" id="solucion-modal">
+<div class="solucion-modal__backdrop" data-cerrar-modal=""></div>
+<div aria-labelledby="solucion-modal-titulo" aria-modal="true" class="solucion-modal__dialog" role="dialog">
+<button aria-label="Cerrar" class="solucion-modal__cerrar" data-cerrar-modal="" type="button">×</button>
+<div class="solucion-modal__video">
+<div class="solucion-modal__video-shell solucion-modal__video-shell--placeholder">
+<span class="solucion-modal__video-badge" id="solucion-modal-video-badge">Video corporativo</span>
+<div class="solucion-modal__video-placeholder-clean">
+<span aria-hidden="true" class="solucion-modal__play-icon">▶</span>
+<strong>Espacio para video del servicio</strong>
+<p>Aquí se integrará el video corporativo de Corporativo SIE para mostrar la solución de forma clara, visual y profesional.</p>
+</div>
+<small class="solucion-modal__video-note" id="solucion-modal-video-note">Conoce de forma visual cómo esta solución puede ayudar a tu empresa.</small>
+</div>
+</div>
+<div class="solucion-modal__info">
+<span class="solucion-modal__etiqueta" id="solucion-modal-etiqueta">Solución especializada</span>
+<h2 id="solucion-modal-titulo">CRM Contable</h2>
+<p id="solucion-modal-descripcion"></p>
+<div class="solucion-modal__modulos" id="solucion-modal-modulos"></div>
+<div class="solucion-modal__acciones">
+<a class="boton boton--primario" href="#contacto" id="solucion-modal-asesor">Solicitar información</a>
+<a class="boton boton--whatsapp" href="#" id="solucion-modal-whatsapp">Hablar por WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ SIE IA -->
+<section aria-labelledby="sie-ia-titulo" class="sie-ia" id="sie-ia">
+<div class="contenedor">
+<div class="sie-ia__shell">
+<div class="sie-ia__texto reveal">
+<span class="etiqueta-seccion etiqueta-seccion--ia"><span class="destello">✦</span> SIE IA</span>
+<h2 id="sie-ia-titulo">Tu aliado <span>inteligente</span><br/>para tu empresa</h2>
+<p>Haz tus consultas y descubre qué sistema o servicio puede ayudarte mejor.</p>
+<div aria-label="Consultas sugeridas para SIE IA" class="sie-ia__ejemplos">
+<button data-pregunta-ia="Quiero facturar mejor" type="button">
+<span class="sie-ia__chip-icono">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"></path><path d="M14 2v5h5"></path><path d="M9 13h6"></path><path d="M9 17h6"></path></svg>
+</span>
+            Facturar
+          </button>
+<button data-pregunta-ia="Necesito controlar inventario" type="button">
+<span class="sie-ia__chip-icono">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><ellipse cx="12" cy="5" rx="7" ry="3"></ellipse><path d="M5 5v6c0 1.7 3.1 3 7 3s7-1.3 7-3V5"></path><path d="M5 11v8c0 1.7 3.1 3 7 3s7-1.3 7-3v-8"></path></svg>
+</span>
+            Inventario
+          </button>
+<button data-pregunta-ia="Busco soporte técnico" type="button">
+<span class="sie-ia__chip-icono">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.12 4.18 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.12.9.34 1.77.66 2.61a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.47-1.23a2 2 0 0 1 2.11-.45c.84.32 1.71.54 2.61.66A2 2 0 0 1 22 16.92z"></path></svg>
+</span>
+            Soporte
+          </button>
+</div>
+<form class="sie-ia__form" id="sie-ia-form" onsubmit="return false;">
+<div class="sie-ia__input-wrap">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m21 21-4.3-4.3"></path></svg>
+<input aria-label="Escribe tu necesidad para SIE IA" id="sie-ia-input" placeholder="¿Qué necesitas hoy?" type="text"/>
+</div>
+<button class="boton boton--ia sie-ia__cta" id="sie-ia-send" type="button">
+<span class="destello">✦</span> Preguntar a SIE IA
+          </button>
+</form>
+</div>
+<div class="sie-ia__demo reveal">
+<div class="ia-chat">
+<div class="ia-chat__header">
+<div class="ia-chat__perfil">
+<div aria-hidden="true" class="ia-chat__avatar">
+<svg fill="none" viewbox="0 0 48 48"><defs><lineargradient gradientunits="userSpaceOnUse" id="botBlue" x1="6" x2="42" y1="6" y2="42"><stop stop-color="#3DBDF5"></stop><stop offset="1" stop-color="#0D8DDB"></stop></lineargradient></defs><rect fill="url(#botBlue)" height="24" rx="12" width="32" x="8" y="12"></rect><circle cx="18" cy="24" fill="white" r="2.3"></circle><circle cx="30" cy="24" fill="white" r="2.3"></circle><path d="M18 29c1.4 1.8 3.6 2.8 6 2.8s4.6-1 6-2.8" stroke="white" stroke-linecap="round" stroke-width="2.2"></path><path d="M24 7v5" stroke="#0D8DDB" stroke-linecap="round" stroke-width="3"></path><circle cx="24" cy="6" fill="#0D8DDB" r="3"></circle></svg>
+</div>
+<div>
+<strong>SIE IA</strong>
+<span>Asistente de soluciones</span>
+</div>
+</div>
+<div class="ia-chat__estado"><span></span> En línea</div>
+</div>
+<div class="ia-chat__body" id="sie-ia-chat-body">
+<div class="ia-chat__mensaje ia-chat__mensaje--usuario">
+<div class="ia-chat__burbuja">Necesito facturar y controlar inventario.</div>
+</div>
+<div class="ia-chat__mensaje ia-chat__mensaje--ia">
+<div aria-hidden="true" class="ia-chat__miniavatar">
+<svg fill="none" viewbox="0 0 48 48"><defs><lineargradient gradientunits="userSpaceOnUse" id="botBlueMini" x1="6" x2="42" y1="6" y2="42"><stop stop-color="#3DBDF5"></stop><stop offset="1" stop-color="#0D8DDB"></stop></lineargradient></defs><rect fill="url(#botBlueMini)" height="24" rx="12" width="32" x="8" y="12"></rect><circle cx="18" cy="24" fill="white" r="2.1"></circle><circle cx="30" cy="24" fill="white" r="2.1"></circle><path d="M18 29c1.4 1.8 3.6 2.8 6 2.8s4.6-1 6-2.8" stroke="white" stroke-linecap="round" stroke-width="2.1"></path></svg>
+</div>
+<div class="ia-chat__burbuja">Puedo recomendarte Siigo Aspel, CONTPAQi u otras soluciones de SIE.</div>
+</div>
+<div class="ia-chat__mensaje ia-chat__mensaje--ia">
+<div aria-hidden="true" class="ia-chat__miniavatar">
+<svg fill="none" viewbox="0 0 48 48"><defs><lineargradient gradientunits="userSpaceOnUse" id="botBlueMini2" x1="6" x2="42" y1="6" y2="42"><stop stop-color="#3DBDF5"></stop><stop offset="1" stop-color="#0D8DDB"></stop></lineargradient></defs><rect fill="url(#botBlueMini2)" height="24" rx="12" width="32" x="8" y="12"></rect><circle cx="18" cy="24" fill="white" r="2.1"></circle><circle cx="30" cy="24" fill="white" r="2.1"></circle><path d="M18 29c1.4 1.8 3.6 2.8 6 2.8s4.6-1 6-2.8" stroke="white" stroke-linecap="round" stroke-width="2.1"></path></svg>
+</div>
+<div class="ia-chat__burbuja">¿Te gustaría ver una comparativa de opciones?</div>
+</div>
+</div>
+<div class="ia-chat__footer">
+<span>Vista previa interactiva</span>
+<button class="ia-chat__atajo" data-pregunta-ia="Quiero comparar opciones" type="button">Comparar opciones</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ CASOS DE ÉXITO -->
+<section aria-labelledby="casos-titulo" class="casos" id="casos">
+<div class="contenedor">
+<div class="encabezado-seccion reveal">
+<span class="etiqueta-seccion">Casos de éxito</span>
+<h2 id="casos-titulo">Empresas que ya confían en SIE</h2>
+</div>
+<div class="casos__spotlight reveal">
+<div class="casos__spotlight-icono">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" viewbox="0 0 24 24"><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><circle cx="11" cy="11" r="2"></circle></svg>
+</div>
+<h3>Estamos reuniendo los primeros casos de éxito</h3>
+<p>Estamos documentando junto a nuestros clientes cómo Corporativo SIE ha resuelto sus necesidades. Muy pronto encontrarás aquí testimonios reales, con foto, empresa y resultados.</p>
+<a class="boton boton--secundario boton--chico" href="#contacto">Quiero ser parte de esta sección</a>
+</div>
+</div>
+</section>
+<!-- ============================================================ SIE STORE -->
+<section aria-labelledby="store-titulo" class="store store--purple">
+<div class="contenedor store-modern reveal">
+<div class="store-modern__copy">
+<span class="store-modern__badge">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.9" viewbox="0 0 24 24"><circle cx="9" cy="20" r="1"></circle><circle cx="19" cy="20" r="1"></circle><path d="M3 4h2l2.4 10.4a2 2 0 0 0 2 1.6h7.8a2 2 0 0 0 2-1.5L21 8H6"></path></svg>
+        SIE Store
+      </span>
+<h2 id="store-titulo">Tecnología para tu <span>empresa</span></h2>
+<p>Equipos y soluciones que complementan la operación de tu negocio.</p>
+<a class="store-modern__btn" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank">
+<span>Visitar SIE Store</span>
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M5 12h14"></path><path d="m13 6 6 6-6 6"></path></svg>
+</a>
+<div aria-label="Beneficios de SIE Store" class="store-modern__beneficios">
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"></path><path d="m9 12 2 2 4-4"></path></svg>Productos con garantía</span>
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M3 7h11v10H3z"></path><path d="M14 10h4l3 3v4h-7z"></path><circle cx="7" cy="19" r="2"></circle><circle cx="18" cy="19" r="2"></circle></svg>Envíos a todo México</span>
+<span><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"></path><path d="M4 13v4a2 2 0 0 0 2 2h1v-6H4zM20 13v4a2 2 0 0 1-2 2h-1v-6h3z"></path></svg>Asesoría especializada</span>
+</div>
+</div>
+<div aria-label="Categorías de SIE Store" class="store-modern__visual">
+<div aria-hidden="true" class="store-modern__halo"></div>
+<div aria-hidden="true" class="store-modern__products">
+<div class="store-device store-device--laptop">
+<div class="store-device__screen"><span></span></div>
+<div class="store-device__base"></div>
+</div>
+<div class="store-device store-device--camera">
+<div class="store-camera__head"><span></span></div>
+<div class="store-camera__neck"></div>
+<div class="store-camera__base"></div>
+</div>
+<div class="store-device store-device--bulb">
+<div class="store-bulb__glass"></div>
+<div class="store-bulb__base"></div>
+</div>
+<div class="store-device store-device--dvr">
+<span class="store-dvr__led"></span><span class="store-dvr__slot"></span>
+</div>
+</div>
+<div class="store-modern__categorias">
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="12" rx="2" width="18" x="3" y="4"></rect><path d="M8 20h8M12 16v4"></path></svg><span>Computadoras</span></a>
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><rect height="10" rx="5" width="18" x="3" y="6"></rect><circle cx="12" cy="11" r="2.5"></circle><path d="M8 20h8"></path></svg><span>Videovigilancia</span></a>
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="m3 11 9-7 9 7"></path><path d="M5 10v10h14V10"></path><path d="M9 20v-6h6v6"></path></svg><span>Smart Home</span></a>
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M12 3l7 4v5c0 5-3.5 8-7 9-3.5-1-7-4-7-9V7l7-4z"></path><path d="m9 12 2 2 4-4"></path></svg><span>Seguridad</span></a>
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="M9 18h6M10 22h4"></path><path d="M8.5 14.5A6 6 0 1 1 15.5 14.5C14.7 15.2 14 16 14 17h-4c0-1-.7-1.8-1.5-2.5Z"></path></svg><span>Iluminación</span></a>
+<a class="store-category" href="https://sie-store.com/" rel="noopener noreferrer" target="_blank"><svg fill="none" stroke="currentColor" stroke-width="1.8" viewbox="0 0 24 24"><path d="m13 2-8 12h7l-1 8 8-12h-7z"></path></svg><span>Energía</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================ CTA FINAL -->
+<section aria-labelledby="cta-final-titulo" class="cta-final" id="contacto">
+<div class="contenedor">
+<div class="cta-final__shell reveal">
+<div class="cta-final__copy">
+<span class="cta-final__eyebrow">Hablemos de tu empresa</span>
+<h2 id="cta-final-titulo">¿No sabes qué solución necesitas?</h2>
+<p>Cuéntanos qué quieres resolver y te ayudamos a encontrar el sistema o servicio que mejor encaje con tu operación.</p>
+<div aria-label="Beneficios de contacto" class="cta-final__beneficios">
+<span>Atención directa</span>
+<span>Orientación personalizada</span>
+<span>Soluciones empresariales</span>
+</div>
+</div>
+<div class="cta-final__panel">
+<p class="cta-final__panel-label">Elige cómo prefieres contactarnos</p>
+<a class="contact-option contact-option--whatsapp" href="#" id="cta-whatsapp">
+<span class="contact-option__icon">
+<svg aria-hidden="true" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2 .7 3.9 1.9 5.5L2.5 22l5.5-1.4c1.3.6 2.7 1 4.2 1 5.5 0 10-4.1 10-9.4S17.5 2 12 2z"></path></svg>
+</span>
+<span class="contact-option__text">
+<strong>Hablar por WhatsApp</strong>
+<small>Inicia una conversación con un asesor</small>
+</span>
+<span aria-hidden="true" class="contact-option__arrow">→</span>
+</a>
+<button aria-controls="consultoria-panel" aria-expanded="false" class="contact-option contact-option--consultoria" id="btn-consultoria" type="button">
+<span class="contact-option__icon">
+<svg aria-hidden="true" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24"><path d="M8 2h8a2 2 0 0 1 2 2v16H6V4a2 2 0 0 1 2-2Z"></path><path d="M9 7h6M9 11h6M9 15h3"></path></svg>
+</span>
+<span class="contact-option__text">
+<strong>Solicitar consultoría</strong>
+<small>Cuéntanos tu necesidad con un poco más de detalle</small>
+</span>
+<span aria-hidden="true" class="contact-option__arrow">＋</span>
+</button>
+<div aria-hidden="true" class="consultoria-panel" id="consultoria-panel">
+<form class="consultoria-form" id="consultoria-form">
+<div class="consultoria-form__fila">
+<label>
+<span>Nombre</span>
+<input id="consultoria-nombre" placeholder="Tu nombre" required="" type="text"/>
+</label>
+<label>
+<span>Empresa</span>
+<input id="consultoria-empresa" placeholder="Nombre de tu empresa" type="text"/>
+</label>
+</div>
+<label>
+<span>¿Qué necesitas resolver?</span>
+<textarea id="consultoria-necesidad" placeholder="Ej. Busco mejorar mi facturación, inventario, nómina..." required="" rows="3"></textarea>
+</label>
+<button class="consultoria-form__submit" type="submit">
+              Enviar solicitud
+              <span aria-hidden="true">→</span>
+</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- ============================================================ FOOTER -->
+<footer class="footer">
+<div class="contenedor footer__grid">
+<div class="footer__col footer__col--marca">
+<img alt="Corporativo SIE" class="footer__logo" src="assets/logo.png"/>
+<p>Software empresarial, soporte, capacitación y tecnología, con el acompañamiento de especialistas.</p>
+<div class="footer__redes">
+<a aria-label="Facebook" href="https://www.facebook.com/CorporativoSIECONTPAQi/" rel="noopener noreferrer" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.2c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"></path></svg></a>
+<a aria-label="WhatsApp" href="https://wa.me/523339540617" rel="noopener noreferrer" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2 .7 3.9 1.9 5.5L2.5 22l5.5-1.4c1.3.6 2.7 1 4.2 1 5.5 0 10-4.1 10-9.4S17.5 2 12 2z"></path></svg></a>
+<a aria-label="LinkedIn" href="https://www.linkedin.com/company/corporativo-sie/" rel="noopener noreferrer" target="_blank"><svg fill="currentColor" viewbox="0 0 24 24"><path d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2C18.5 11 17 10 15.2 10C13.8 10 13 10.8 12.7 11.5V10.2H9.9V18.5H12.7V13.6C12.7 12.9 13.3 12.3 14 12.3C14.8 12.3 15.3 12.9 15.3 13.6V18.5H18.5M6.9 8.6C7.9 8.6 8.6 7.9 8.6 6.9C8.6 6 7.9 5.3 6.9 5.3C6 5.3 5.3 6 5.3 6.9C5.3 7.9 6 8.6 6.9 8.6M8.3 18.5V10.2H5.6V18.5H8.3Z"></path></svg></a>
+</div>
+</div>
+<div class="footer__col">
+<h4>Sistemas</h4>
+<a href="contpaqi.html">CONTPAQi</a>
+<a href="siigo-aspel.html">Siigo Aspel</a>
+<a href="#sie-ia">SIE IA</a>
+</div>
+<div class="footer__col">
+<h4>Empresa</h4>
+<a href="#servicios">Servicios</a>
+<a href="nosotros.html">Nosotros</a>
+<a href="#casos">Casos de éxito</a>
+<a href="https://sie-store.com/" rel="noopener noreferrer" target="_blank">SIE Store</a>
+</div>
+<div class="footer__col">
+<h4>Contacto</h4>
+<p>Atención directa para información, soporte y consultoría.</p>
+<a href="mailto:contacto@corporativosie.com.mx">contacto@corporativosie.com.mx</a>
+<a href="tel:+523340401698">33-4040-1698</a>
+</div>
+</div>
+<div class="footer__legal">
+<p>© 2026 Corporativo SIE Guadalajara Soluciones Integrales S.A.S. de C.V.</p>
+
+</div>
+</footer>
+<div class="fab" id="fab">
+<a aria-label="Hablar por WhatsApp" class="fab__boton" href="#" id="fab-whatsapp">
+<svg fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.2c0 2 .7 3.9 1.9 5.5L2.5 22l5.5-1.4c1.3.6 2.7 1 4.2 1 5.5 0 10-4.1 10-9.4S17.5 2 12 2z"></path></svg>
+</a>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
